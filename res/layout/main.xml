@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <!-- 应该有titlebar -->
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:background="#8a8a8a">
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Instagram_like"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    
+	<!-- 底部操作按钮 -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+        <Button android:id="@+id/snapshot"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="拍照"/>
+        <Button android:id="@+id/album"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="相册"/>        
+	</LinearLayout>
+	
+    <!-- 中间显示pic feed的列表  -->
+    <ListView
+		android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_above="@id/bottom_bar"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="#ffffff"
+        />
+    
+    
+</RelativeLayout>

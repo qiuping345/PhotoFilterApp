@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+    <view class="com.mobpie.widget.CropImageView" android:id="@+id/image"
+            android:scaleType="fitCenter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@null"
+            
+            android:layout_alignParentBottom="true"
+			android:layout_marginBottom="98dip"
+			android:layout_gravity="center"
+    />
+
+    <LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="58dip"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/filters_edit_tool_bg">
+
+		<ImageButton android:id="@+id/discard" android:background="@null"
+			android:layout_marginLeft="9dip" android:layout_width="wrap_content"
+			android:layout_marginTop="8dip" android:layout_height="wrap_content"
+			android:src="@drawable/btn_clip_discard"></ImageButton>
+
+
+		<ImageButton android:layout_height="wrap_content"
+			android:background="@null" android:layout_marginLeft="214dip"
+			android:layout_marginTop="8dip" android:layout_width="wrap_content"
+			android:id="@+id/save" android:src="@drawable/btn_clip_save"></ImageButton>
+	</LinearLayout>
+
+</RelativeLayout>

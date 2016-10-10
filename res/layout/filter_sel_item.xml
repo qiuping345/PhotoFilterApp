@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"> 
+    <ImageView
+		android:id="@+id/icon"
+	    android:src="#ff0000"
+	    android:layout_width="80dp"
+	    android:layout_height="80dp"/>
+	        
+    <TextView android:id="@+id/text"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"/>
+</FrameLayout>
